@@ -1,7 +1,7 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class Triangle2d < Formula
+class Triangle < Formula
   desc "A Two-Dimensional Quality Mesh Generator and Delaunay Triangulator."
   homepage "http://www.cs.cmu.edu/~quake/triangle.html"
   url "http://www.netlib.org/voronoi/triangle.zip"
