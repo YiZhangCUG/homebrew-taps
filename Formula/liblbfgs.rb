@@ -8,6 +8,7 @@ class Liblbfgs < Formula
   sha256 "cf65e6bd80b7976634dea99b95785df8045c30f1d040c28ccbb2ab367c4d648a"
 
   depends_on "cmake" => :build
+  depends_on "gcc" => :build
 
   def install
     mkdir "build" do
