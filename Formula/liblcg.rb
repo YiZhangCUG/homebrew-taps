@@ -7,7 +7,10 @@ class Liblcg < Formula
   depends_on "cmake" => :build
 
   def install
-    system "cmake", ".", *std_cmake_args
-    system "make"
+    mkdir "build" do
+      system "cmake", "..", *std_cmake_args
+      system "make"
+      system "make", "install" # if this fails, try separate make/make install steps
+    end
   end
 end
