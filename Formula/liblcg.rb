@@ -1,8 +1,8 @@
 class Liblcg < Formula
   desc "A simple C++ library of linear conjugate gradient method."
   homepage "https://yizhangcug.github.io/liblcg/"
-  url "https://github.com/YiZhangCUG/liblcg/archive/v1.4.1.tar.gz"
-  sha256 "d2ae281fdb85775e193a987ffb7a43155bc55c8a01feefe69ecc609d605f80cb"
+  url "https://github.com/YiZhangCUG/liblcg/archive/v1.5.1.tar.gz"
+  sha256 "20edb4f14594dbc83c1dc61e22247f772d1ef01c37991de2fa8365ba0106cd70"
 
   depends_on "cmake" => :build
 
