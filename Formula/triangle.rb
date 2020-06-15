@@ -8,9 +8,6 @@ class Triangle < Formula
   version "v1.6"
   sha256 "222205e413cae5ff7dc5361927ed4cca95b16ef7b3b377ff1933e17f9b033c2b"
 
-  depends_on "X11" => :build
-  depends_on "gcc" => :build
-
   def install
     system "make"
     bin.install triangle
