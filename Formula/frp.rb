@@ -10,10 +10,10 @@ class Frp < Formula
   depends_on "go" => :build
 
   def install
-    f install
     ENV["GOPROXY"] = "https://goproxy.io"
     system "make"
     bin.install "bin/frps"
+    bin.install "bin/frpc"
   end
 
   test do
