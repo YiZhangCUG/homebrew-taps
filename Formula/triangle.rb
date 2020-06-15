@@ -6,7 +6,7 @@ class Triangle < Formula
   homepage "http://www.cs.cmu.edu/~quake/triangle.html"
   url "http://www.netlib.org/voronoi/triangle.zip"
   version "v1.6"
-  sha256 "222205e413cae5ff7dc5361927ed4cca95b16ef7b3b377ff1933e17f9b033c2b"
+  sha256 "1766327add038495fa3499e9b7cc642179229750f7201b94f8e1b7bee76f8480"
 
   def install
     system "make"
