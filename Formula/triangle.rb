@@ -8,8 +8,10 @@ class Triangle < Formula
   version "v1.6"
   sha256 "1766327add038495fa3499e9b7cc642179229750f7201b94f8e1b7bee76f8480"
 
+  depends_on "gcc" => :build
+
   def install
-    system "make ", " CC=gcc-9 CSWITCHES=\"-O2 -I/usr/X11/include -L/usr/X11/lib\""
+    system "make CC=gcc-9 CSWITCHES=\"-O2 -I/usr/X11/include -L/usr/X11/lib\""
     bin.install triangle
     bin.install showme
   end
