@@ -9,7 +9,7 @@ class Triangle < Formula
   sha256 "1766327add038495fa3499e9b7cc642179229750f7201b94f8e1b7bee76f8480"
 
   def install
-    system "make"
+    system "make " " CC=gcc-9 CSWITCHES=\"-O2 -I/usr/X11/include -L/usr/X11/lib\""
     bin.install triangle
     bin.install showme
   end
